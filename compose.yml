@@ -5,8 +5,14 @@ services:
     environment:
       VERSION: "stable"
       GPU: "Y"
-      FORCE_HOST_CURSOR: "Y"
+      TABLET: "N"
+      FORCE_HOST_CURSOR: "N"
       KEEP_AWAKE: "N"
+      BALLOONING: "Y"
+      AUDIO: "Y"
+      LOSSY: "Y"
+      RAM_SIZE: "10G"
+      CPU_CORES: "2"
     devices:
       - /dev/kvm
       - /dev/net/tun
